@@ -25,7 +25,7 @@ let name = await conn.getName(who)
             { fromMe: false,
             participant: `0@s.whatsapp.net`, ...(m.chat ? 
             { remoteJid: "status@broadcast" } : {}) },
-            message: { "liveLocationMessage": { "title": "© CREATED BY YUSHINO MD","𝑨𝒍𝒅𝒊 𝑿 𝑨𝒊𝒔𝒚𝒂𝒉": wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
+            message: { "liveLocationMessage": { "title": "© CREATED BY SHURANBOTZ","「𝑺𝒉𝒖𝒓𝒂𝒏𝑩𝑶𝑻𝒁 」": wm, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
            }
        let tag = `@${m.sender.replace(/@.+/, '')}`
   let mentionedJid = [m.sender]
@@ -66,14 +66,14 @@ let name = await conn.getName(who)
     sourceUrl: sgc
      }}
   })*/
- conn.send3ButtonImg(m.chat, result.data, `Effect *${effect}nya* Dah Jadi ${tag}`,`Subs My Channel ${global.snh}`, 'Menu', '.menu', 'Owner', '.owner', 'Credit', '.credit', global.fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+ conn.send3ButtonImg(m.chat, result.data, `Effect *${effect}nya* Dah Jadi ${tag}`,`𒈞sнuʀᴀɴʙoтz𒈞 ${global.snh}`, 'Menu', '.menu', global.fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: sgc,
     mediaType: 2, 
     description: sgc,
     title: "Iɴɪ Dʜ Sɪᴀᴘ Cᴜʏ 〠",
     body: wm,
     thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: `https://wa.me/6281361281833?text=Hᴀɪ+Bɢ+Aʟᴅɪ`
+    sourceUrl: `https://wa.me/6281271010619?text=Hᴀɪ+Bɢ+Aʟᴅɪ`
      }}
   })
 }
@@ -337,6 +337,26 @@ var effects = [
   {
     "title": "coolgraffiti",
     "url": "https://textpro.me/create-a-cool-graffiti-text-on-the-wall-1010.html"
+  },
+  {
+    "title": "GreenNeon",
+    "url": "https://textpro.me/green-neon-text-effect-874.html"
+  },
+    {
+    "title": "PornHub",
+    "url": "https://textpro.me/pornhub-style-logo-online-generator-free-977.html"
+  },
+    {
+    "title": "Blood",
+    "url": "https://textpro.me/horror-blood-text-effect-online-883.html"
+  },
+    {
+    "title": "Magma",
+    "url": "https://textpro.me/create-a-magma-hot-text-effect-online-1030.html"
+  },
+   {
+    "title": "nelight",
+    "url": "https://textpro.me/neon-light-text-effect-online-882.html"
   },
   {
     "title": "coolwallgraffiti",
