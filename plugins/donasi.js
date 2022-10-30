@@ -7,21 +7,21 @@ const messa = await prepareWAMessageMedia({ image: fs.readFileSync('./media/ok.j
 const catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "productMessage": {
 "product": {
-"productImage": messa.imageMessage, 
-"productId": "5489299044451325",
-"title": `Jasa Sewa Yushino Md`,
+"productImage": -, 
+"productId": "-",
+"title": `Jasa Sewa ShuranBotz`,
 "description": `HALO BANG`,
-"currencyCode": "IDR",
+"currencyCode": "-",
 "bodyText": wm,
 "footerText": wm,
-"priceAmount1000": "3000",
-"productImageCount": 1,
-"firstImageId": 1,
-"salePriceAmount1000": "10000000",
+"priceAmount1000": "-",
+"productImageCount": -,
+"firstImageId": -,
+"salePriceAmount1000": "-",
 "retailerId": wm,
-"url": "wa.me/6281361281833"
+"url": "-"
 },
-"businessOwnerJid": "6281361281833@s.whatsapp.net",
+"businessOwnerJid": "-",
 }
 }), { userJid: m.chat, quoted: ftroli })    
 
