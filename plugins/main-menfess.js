@@ -15,10 +15,10 @@ let mentionedJid = [m.sender]
     if (mf) return !0
  
 let id = + new Date
-let tek = `Hᴀɪ Kᴀᴋ @${data.jid.split('@')[0]}, ᴋᴀᴍᴜ ᴍᴇɴᴇʀɪᴍᴀʜ ᴘᴇsᴀɴ ᴍᴀɴғᴇss ɴɪʜ.\n➴`.trim();
-let logs = `➯ Pᴇsᴀɴ : ${pesan}`
+let tek = `⌘ нᴀι κᴀκ @${data.jid.split('@')[0]}, κᴀмu мᴇɴᴇʀιмᴀ ᴘᴇsᴀɴ мᴇɴғᴇss ɴιн κᴀκ\n╔══════ ≪ °❈° ≫ ══════╗`.trim();
+let logs = `ᴘᴇsᴀɴ: ${pesan}\n╚══════ ≪ °❈° ≫ ══════╝`
 
-let ssn = `〠 Dᴀʀɪ : ${name}\n⎙ Pᴇsᴀɴ : ${pesan}`
+let ssn = `〠 Dᴀʀɪ : ${name}\n╔══════ ≪ °❈° ≫ ══════╗\n⎙ Pᴇsᴀɴ : ${pesan}\n╚══════ ≪ °❈° ≫ ══════╝`
         let imgr = fla.getRandom()
         //Created By AL? Offc
        await conn.send3ButtonDoc(data.jid, tek, ssn, 'Balas', '.balasmenfess', 'Owner', '.owner', 'Credit', '.credit', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
