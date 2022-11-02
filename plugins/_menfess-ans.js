@@ -9,13 +9,13 @@ export async function before(m) {
 	if ((m.text === 'BALAS PESAN' || m.text === '') && m.quoted.mtype == 'buttonsMessage') return m.reply("Silahkan kirim pesan balasan kamu.\nKetik pesan sesuatu lalu kirim, maka pesan otomatis masuk ke target balas pesan.");
 	else {
 		let imgr = fla.getRandom()
-		let txt = `Hᴀɪ ᴋᴀᴋ @${mf.dari.split('@')[0]}, ᴋᴀᴍᴜ ᴍᴇɴᴇʀɪᴍᴀʜ ʙᴀʟᴇsᴀɴ ɴɪʜ.Pesan yang kamu kirim sebelumnya:\n${mf.pesan}\n\nPesan balasannya:\n${m.text}\n`.trim();
-		let sblm = `Pᴇsᴀɴ Aɴᴅᴀ Sᴇʙᴇʟᴜᴍɴʏᴀ ➛ ${mf.pesan}\nPᴇsᴀɴ Bᴀʟᴀsᴀɴɴʏᴀ ➨ ${m.text}`
-		await this.send3ButtonDoc(mf.dari, txt, sblm, 'Balas', '.balasmenfess', 'Owner', '.owner', 'Credit', '.credit', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram.com/_b4c00t4an_s3l3b',
+		let txt = `╔════════ ≪ °❈° ≫ ════════╗\nHᴀɪ ᴋᴀᴋ @${mf.dari.split('@')[0]}, ᴋᴀᴍᴜ ᴍᴇɴᴇʀɪᴍᴀʜ ʙᴀʟᴇsᴀɴ ɴɪʜ.Pesan yang kamu kirim sebelumnya:\n${mf.pesan}\n╚═══════ ≪ °❈° ≫ ═══════╝\n\n╔═══════ ≪ °❈° ≫ ═══════╗\n\nPesan balasannya:\n${m.text}\n\n╚═══════ ≪ °❈° ≫ ═══════╝\n`.trim();
+		let sblm = ` ●──────────────●Pᴇsᴀɴ Aɴᴅᴀ Sᴇʙᴇʟᴜᴍɴʏᴀ ➛ ${mf.pesan}\nPᴇsᴀɴ Bᴀʟᴀsᴀɴɴʏᴀ ➨ ${m.text}●──────────────●`
+		await this.send3ButtonDoc(mf.dari, txt, sblm, 'Balas', '.balasmenfess', 'Owner', '.owner', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: '',
     mediaType: 2, 
     description: sgc,
-    title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
+    title: "𒈞sнuʀᴀɴʙoтz𒈞",
     body: wm,
     thumbnail: fs.readFileSync('./media/menfess.jpg'),
     sourceUrl: sgc}}})
