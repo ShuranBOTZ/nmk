@@ -705,23 +705,23 @@ export async function participantsUpdate({ id, participants, action }) {
                             })
                             
  /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: '-',
+    mediaUrl: '',
     mediaType: 2, 
     description: sgc,
-    title: '-',
+    title: '',
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
     sourceUrl: sgc
      }}
   })*/
-  let welcom = '-'
+  let welcom = 'https://telegra.ph/file/35f17bb371d308504bc46.jpg'
 
-  let godbye = '-'
+  let godbye = 'https://telegra.ph/file/b44e48066aed4fb7ad291.jpg'
   conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: '-',
+    mediaUrl: '',
     mediaType: 2, 
     description: sgc,
-    title: "-",
+    title: "",
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
     sourceUrl: sgc
