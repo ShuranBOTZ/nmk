@@ -11,7 +11,7 @@ const defaultMenu = {
 before: ` `.trimStart(),
 header: '⋘═════∗ {•『 *%category* 』•} ∗═════ ⋙',
 body: `╎⌬ %cmd %isPremium %islimit`,
-footer: `⋘══════∗ {•『 父 』•} ∗══════ ⋙\n`,
+footer: `⋘═════∗ {•『 父 』•} ∗═════ ⋙\n`,
 after: ` `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
@@ -318,12 +318,12 @@ let tagnya = `@${m.sender.split`@`[0]}`
 ┊↬✗• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
 ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `*/
-let con = `┏━━━━━━━━━━━━━━━━━━━┓
+let con = `┏━━━━━━━━━━━━━━━━━━┓
 ┆     List Menu ${namebot}
-┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛
-┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
+┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛
+┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
 ┆ Hᴀʟᴏ ${tagnya}
-┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
+┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
 ┣╌ ⟪ *Yᴏᴜʀ Iɴғᴏ* ⟫
 ┃▷ *Nᴀᴍᴇ* : ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 ┃▷ *Sᴛᴀᴛᴜs* : ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
@@ -332,7 +332,7 @@ let con = `┏━━━━━━━━━━━━━━━━━━━┓
 ┃▷ *Lɪᴍɪᴛ* : ${usrs.limit}
 ┃▷ *Lᴇᴠᴇʟ* : ${usrs.limit}
 ╰╴╴╴╳
-▎▍▌▋▊▍▋▍▌▌▌▋▍▎▎▍▍▎▎▎▎▍
+▎▍▌▋▊▍▋▍▌▌▌▋▎▎▍▍▎▎▎▎▍
 ╭╴╴╼╳
 │◇ Aʟʟ Fɪᴛᴜʀ: ${totalf}
 ╰╸╳`
@@ -347,7 +347,7 @@ let tett = `▢ ▱▱▱ ▣► Dᴀᴛᴇ ◄▣ ▱▱▱ ▢
 ▯▷ *Uᴘᴛɪᴍᴇ* : ${mpt}
 ▯▷ *Tɪᴍᴇ* :  ${moment.tz('Asia/Jakarta').format('HH')} H${moment.tz('Asia/Jakarta').format('mm')} M${moment.tz('Asia/Jakarta').format('ss')} S
 ▯▷ *Tᴀɴɢɢᴀʟ Isʟᴀᴍ* : ${dateIslamic}
-▢ ▱▱▱▱▱▱▱▱▱▱▱▱ ▢
+▢ ▱▱▱▱▱▱▱▱▱▱▱ ▢
 `
 let fot = `Nᴏᴛᴇ!! : Jɪᴋᴀ Aɴᴅᴀ Mᴇɴᴇᴍᴜᴋᴀɴ Bᴜɢ/Eʀʀᴏʀ 
 Bɪsᴀ Rᴇᴘᴏʀᴛ Dᴇɴɢᴀɴ Cᴀʀᴀ ▻ ketik #report 
@@ -498,9 +498,9 @@ ptt: false, seconds: 0,contextInfo: {
 
 //------------------ menuny
 let ownernya = `@${nomorown.split`@`[0]}`
-let almenu = `┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
+let almenu = `┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
 ┆ Hᴀʟᴏ ${tagnya}
-┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
+┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
 ┣╌ ⟪ *Yᴏᴜʀ Iɴғᴏ* ⟫
 ┃▷ *Nᴀᴍᴇ* : ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 ┃▷ *Sᴛᴀᴛᴜs* : ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
@@ -510,7 +510,7 @@ let almenu = `┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
 ┃▷ *Lᴇᴠᴇʟ* : ${usrs.limit}
 ┃▷ *Mᴏɴᴇʏ* : ${money}
 ╰╴╴╴╳
-▎▍▌▋▊▍▌▌▋▍▊▋▐▍▊▊▊▍▍
+▎▍▌▋▊▍▌▌▋▍▊▐▍▊▊▊▍▍
 ╭╴╴╼ ▻ *INFO BOT* ◅ ╾╶ ╮
 │◇ Aʟʟ Fɪᴛᴜʀ: ${totalf}
 │◇ Oᴡɴᴇʀ: ${ownernya}
