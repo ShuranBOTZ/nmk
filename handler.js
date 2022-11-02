@@ -705,7 +705,7 @@ export async function participantsUpdate({ id, participants, action }) {
                             })
                             
  /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: '',
+    mediaUrl: 'https://www.instagram.com/ShuranAD',
     mediaType: 2, 
     description: sgc,
     title: '',
@@ -714,11 +714,11 @@ export async function participantsUpdate({ id, participants, action }) {
     sourceUrl: sgc
      }}
   })*/
-  let welcom = 'https://telegra.ph/file/35f17bb371d308504bc46.jpg'
+  let welcom = 'https://telegra.ph/file/bc60bc82c0cf339e98191.jpg'
 
-  let godbye = 'https://telegra.ph/file/b44e48066aed4fb7ad291.jpg'
+  let godbye = 'https://telegra.ph/file/b3515d5d6aacb9be82f80.jpg'
   conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: '',
+    mediaUrl: 'https://www.instagram.com/ShuranAD',
     mediaType: 2, 
     description: sgc,
     title: "",
