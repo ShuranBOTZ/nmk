@@ -181,7 +181,7 @@ let welc = `
 @desc`
 let lef = 
 `❖━━━[ *나중에 봐요* ]━━━❖
-𝚂𝚊𝚢𝚘𝚗𝚊𝚛𝚊𝚊 *@user* 👋😃`
+sᴀʏoɴᴀʀᴀᴀ @user sᴇмoԍᴀ κᴇтᴇмu ᴅɪ ʟᴀɪɴ wᴀκтu , sᴇκᴀʟɪᴀɴ ʙᴀwᴀ мᴀκᴀɴᴀɴ ʏᴀн `
 
   conn.welcome = welc
   conn.bye = lef
