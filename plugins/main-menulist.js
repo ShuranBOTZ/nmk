@@ -9,9 +9,9 @@ import fetch from 'node-fetch'
 
 const defaultMenu = {
 before: ` `.trimStart(),
-header: '⋘═════∗ {•『 *%category* 』•} ∗═════ ⋙',
-body: `╎⌬ %cmd %isPremium %islimit`,
-footer: `⋘═════∗ {•『 父 』•} ∗═════ ⋙\n`,
+header: '⃟⃟☰⃟⃟ᭁ═━┈━┈༓ *%category* ',
+body: `┆➨ %cmd %isPremium %islimit`,
+footer: `⃟⃟⃟⃟࿑⃟⃟⃟࿐═┈༓᭄༤\n`,
 after: ` `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
@@ -92,7 +92,7 @@ let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length
 let tags
-let emot = `➠`
+let emot = `⃟࿑⃟⃟⃟⟣⟜ ${pickRandom(['⎔', '◈▻', '✦', '⭑', 'ᯬ', '⭔', '◉', '⬟', '᭻', '»', '〆', '々', '⛥', '✗', '⛊', '⚜', '⚝', '⚚', '♪'])}`
 let rndom = `${pickRandom(['defaultMenu', 'defmenu1'])}`
 let teks = `${args[0]}`.toLowerCase()
 let arrayMenu = ['all', 'anime', 'update', 'maker', 'berita', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database","quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
@@ -257,7 +257,7 @@ setTimeout(resolve, 1000)
 let mpt = clockString(_mpt)
 const sections = [
 {
-title: `«̶ ̶̶̶ ̶ «̶ ̶̶̶ ̶⟡ List Menu ⟡»̶ ̶̶̶ »̶ ̶̶̶ ,
+title: `⃟⟣⟚⟝ ⟡ List Menu ${namebot} ⟡ ⟞⟚⟢⃟`,
 rows: [
 {title: `${emot} Rpg`, rowId: ".? rpg", description: "Mᴇɴᴀᴍᴘɪʟᴋᴀᴍ Mᴇɴᴜ Rᴘɢ"},
 {title: `${emot} Exp`, rowId: ".? xp", description: "Mᴇɴᴀᴍᴘɪʟᴋᴀɴ Mᴇɴᴜ Exᴘ"},
@@ -285,10 +285,10 @@ rows: [
 {title: `${emot} Owner`, rowId: ".? owner", description: "Mᴇɴᴀᴍᴘɪʟᴋᴀɴ Mᴇɴᴜ Oᴡɴᴇʀ"},
 ]
 }, {
-title: `«̶ ̶̶̶ ̶ «̶⟡ Support Me ⟡»̶ ̶̶̶ ̶ »̶ ̶̶̶ `,
+title: `⃟⟣⟚⟝ ⟡ Support Me ${namebot} ⟡ ⟞⟚⟢⃟`,
 rows: [
-{title: `⟐ - ⟐`, rowId: "-", description: "-"},
-{title: `⟐ - ⟐`, rowId: "-", description: "-"},
+{title: `⟐ Donasi ⟐`, rowId: ".donasi", description: "Donasi Agar Saya Semangat Untuk Update Bot:)"},
+{title: `⟐ Sewa Bot ⟐`, rowId: ".sewa", description: "Mau Nyewa?"},
 {title: `⟐ Script ⟐`, rowId: ".sc", description: "Menampilkan Script Bot Ini"},
 ]}]
 let psan = 'bagaimana kabarmu?'
@@ -318,12 +318,12 @@ let tagnya = `@${m.sender.split`@`[0]}`
 ┊↬✗• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
 ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `*/
-let con = `┏━━━━━━━━━━━━━━━━━━┓
+let con = `┏━━━━━━━━━━━━━━━━━━━┓
 ┆     List Menu ${namebot}
-┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛
-┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
+┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛
+┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
 ┆ Hᴀʟᴏ ${tagnya}
-┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
+┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
 ┣╌ ⟪ *Yᴏᴜʀ Iɴғᴏ* ⟫
 ┃▷ *Nᴀᴍᴇ* : ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 ┃▷ *Sᴛᴀᴛᴜs* : ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
@@ -332,7 +332,7 @@ let con = `┏━━━━━━━━━━━━━━━━━━┓
 ┃▷ *Lɪᴍɪᴛ* : ${usrs.limit}
 ┃▷ *Lᴇᴠᴇʟ* : ${usrs.limit}
 ╰╴╴╴╳
-▎▍▌▋▊▍▋▍▌▌▌▋▎▎▍▍▎▎▎▎▍
+▎▍▌▋▊▍▋▍▌▌▌▋▍▎▎▍▍▎▎▎▎▍
 ╭╴╴╼╳
 │◇ Aʟʟ Fɪᴛᴜʀ: ${totalf}
 ╰╸╳`
@@ -347,7 +347,7 @@ let tett = `▢ ▱▱▱ ▣► Dᴀᴛᴇ ◄▣ ▱▱▱ ▢
 ▯▷ *Uᴘᴛɪᴍᴇ* : ${mpt}
 ▯▷ *Tɪᴍᴇ* :  ${moment.tz('Asia/Jakarta').format('HH')} H${moment.tz('Asia/Jakarta').format('mm')} M${moment.tz('Asia/Jakarta').format('ss')} S
 ▯▷ *Tᴀɴɢɢᴀʟ Isʟᴀᴍ* : ${dateIslamic}
-▢ ▱▱▱▱▱▱▱▱▱▱▱ ▢
+▢ ▱▱▱▱▱▱▱▱▱▱▱▱ ▢
 `
 let fot = `Nᴏᴛᴇ!! : Jɪᴋᴀ Aɴᴅᴀ Mᴇɴᴇᴍᴜᴋᴀɴ Bᴜɢ/Eʀʀᴏʀ 
 Bɪsᴀ Rᴇᴘᴏʀᴛ Dᴇɴɢᴀɴ Cᴀʀᴀ ▻ ketik #report 
@@ -357,7 +357,7 @@ text: tett,
 footer: fot,
 mentions: await conn.parseMention(con),
 title: con,
-buttonText: `cʟιcκ нᴇʀᴇ ⎙`, 
+buttonText: `CLICK HERE ⎙`, 
 sections
 }
 if (teks == '404') {
@@ -498,9 +498,9 @@ ptt: false, seconds: 0,contextInfo: {
 
 //------------------ menuny
 let ownernya = `@${nomorown.split`@`[0]}`
-let almenu = `┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
+let almenu = `┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
 ┆ Hᴀʟᴏ ${tagnya}
-┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
+┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
 ┣╌ ⟪ *Yᴏᴜʀ Iɴғᴏ* ⟫
 ┃▷ *Nᴀᴍᴇ* : ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 ┃▷ *Sᴛᴀᴛᴜs* : ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
@@ -510,7 +510,7 @@ let almenu = `┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
 ┃▷ *Lᴇᴠᴇʟ* : ${usrs.limit}
 ┃▷ *Mᴏɴᴇʏ* : ${money}
 ╰╴╴╴╳
-▎▍▌▋▊▍▌▌▋▍▊▐▍▊▊▊▍▍
+▎▍▌▋▊▍▌▌▋▍▊▋▐▍▊▊▊▍▍
 ╭╴╴╼ ▻ *INFO BOT* ◅ ╾╶ ╮
 │◇ Aʟʟ Fɪᴛᴜʀ: ${totalf}
 │◇ Oᴡɴᴇʀ: ${ownernya}
@@ -523,7 +523,7 @@ let almenu = `┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
 │◇ Dᴀᴛᴀʙᴀsᴇ: ${totalreg}
 ╰╸╳`
 let nomorwa = '0'
-let nomorowm1 = '6281271010619'
+let nomorowm1 = '6281361281833'
 let d1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
 let d2 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 let d3= 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
@@ -578,7 +578,7 @@ function ucapan() {
 const time = moment.tz('Asia/Jakarta').format('HH')
 let res = "Sudah Dini Hari Kok Belum Tidur Kak? 🥱"
 if (time >= 4) {
-res = "Pagi kakk 🌄"
+res = "Pagi Lord 🌄"
 }
 if (time >= 10) {
 res = "Selamat Siang Kak ☀️"
