@@ -347,7 +347,8 @@ let tett = `╭─────❒✦DATE✦❒─────╮
 │► uptime :  ${mpt}
 │► time :  ${moment.tz('Asia/Jakarta').format('HH')} H${moment.tz('Asia/Jakarta').format('mm')} M${moment.tz('Asia/Jakarta').format('ss')} S
 │► tanggal islam :  ${dateislamic}
-╰────────❒`
+╰────────❒
+`
 let fot = `Nᴏᴛᴇ!! : Jɪᴋᴀ Aɴᴅᴀ Mᴇɴᴇᴍᴜᴋᴀɴ Bᴜɢ/Eʀʀᴏʀ 
 Bɪsᴀ Rᴇᴘᴏʀᴛ Dᴇɴɢᴀɴ Cᴀʀᴀ ▻ ketik #report 
 `
