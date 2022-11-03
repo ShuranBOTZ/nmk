@@ -9,9 +9,9 @@ import fetch from 'node-fetch'
 
 const defaultMenu = {
 before: ` `.trimStart(),
-header: `╔═══《%category》══╗`,
+header: `╔═══《%category》═══╗`,
 body: `╠⋗ %cmd %isPremium %islimit`,
-footer: `╚════《✧》═══╝\n`,
+footer: `╚════《✧》════╝\n`,
 after: ` `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
