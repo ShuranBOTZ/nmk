@@ -497,30 +497,31 @@ ptt: false, seconds: 0,contextInfo: {
 
 //------------------ menuny
 let ownernya = `@${nomorown.split`@`[0]}`
-let almenu = `┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
-┆ Hᴀʟᴏ ${tagnya}
-┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
-┣╌ ⟪ *Yᴏᴜʀ Iɴғᴏ* ⟫
-┃▷ *Nᴀᴍᴇ* : ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-┃▷ *Sᴛᴀᴛᴜs* : ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-┃▷ *Pʀᴇᴍɪᴜᴍ* : ${usrs.premiumTime > 1 ? '✔ Ya': '✘ Tidak'}
-┃▷ *Rᴏʟᴇ* : ${usrs.role}
-┃▷ *Lɪᴍɪᴛ* : ${usrs.limit}
-┃▷ *Lᴇᴠᴇʟ* : ${usrs.limit}
-┃▷ *Mᴏɴᴇʏ* : ${money}
-╰╴╴╴╳
-▎▍▌▋▊▍▌▌▋▍▊▋▐▍▊▊▊▍▍
-╭╴╴╼ ▻ *INFO BOT* ◅ ╾╶ ╮
-│◇ Aʟʟ Fɪᴛᴜʀ: ${totalf}
-│◇ Oᴡɴᴇʀ: ${ownernya}
-│◇ Mᴏᴅᴇ: ${mode}
-│◇ Pʟᴀᴛғᴏʀᴍ: ${platform}
-│◇ Tʏᴘᴇ: Nodejs 
-│◇ Bᴀɪʟᴇʏs: Multi Device
-│◇ Pʀᴇғɪx: ${_p}
-│◇ Uᴘᴛɪᴍᴇ: ${mpt} 
-│◇ Dᴀᴛᴀʙᴀsᴇ: ${totalreg}
-╰╸╳`
+let almenu = `╭───────────❒
+│ㅤнᴇʟʟo ${tagnya}
+├───────────
+│
+├─✦ʏouʀ ιɴғo✦
+│► Nama :  ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+│► Status :   ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+│► Premium :  ${usrs.premiumTime > 1 ? '✔ Ya': '✘ Tidak'}
+│► Role :  ${usrs.role}
+│► Limit :  ${usrs.limit}
+│► Level :  ${usrd.limit}
+│► Money :  ${money}
+╰──────❒
+ꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖ
+╭──❒✦ιɴғo ʙoт✦❒──╮
+│► All Fitur :  ${totalf}
+│► Owner :  ${ownernya}
+│► Mode :  ${mode}
+│► Platform :  ${platform}
+│► Type :  nodejs
+│► Baileys :  Multi Device
+│► Prefix :  ${_p}
+│► Uptime :  ${mpt}
+│► Database :  ${totalreg}
+╰──────❒`
 let nomorwa = '0'
 let nomorowm1 = '6281361281833'
 let d1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
