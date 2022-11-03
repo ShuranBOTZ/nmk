@@ -508,7 +508,7 @@ let almenu = `╭───────────❒
 │► Premium :  ${usrs.premiumTime > 1 ? '✔ Ya': '✘ Tidak'}
 │► Role :  ${usrs.role}
 │► Limit :  ${usrs.limit}
-│► Level :  ${usrd.limit}
+│► Level :  ${usrs.limit}
 │► Money :  ${money}
 ╰──────❒
 ꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖ
