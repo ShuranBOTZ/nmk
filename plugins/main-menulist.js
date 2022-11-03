@@ -285,7 +285,7 @@ rows: [
 {title: `${emot} Owner`, rowId: ".? owner", description: "Mᴇɴᴀᴍᴘɪʟᴋᴀɴ Mᴇɴᴜ Oᴡɴᴇʀ"},
 ]
 }, {
-title: `⃟⟣⟚⟝ ⟡ Support Me ${namebot} ⟡ ⟞⟚⟢⃟`,
+title: `⃟⟣⟚⟝ ⟡ Support Me ⟡ ⟞⟚⟢⃟`,
 rows: [ 
 {title: `⟐ Category ⟐`, rowId: "", description: ""},
 {title: `⟐ Script ⟐`, rowId: ".sc", description: "Menampilkan Script Bot Ini"},
@@ -317,24 +317,25 @@ let tagnya = `@${m.sender.split`@`[0]}`
 ┊↬✗• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
 ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `*/
-let con = `┏━━━━━━━━━━━━━━━━━━━┓
-┆     List Menu ${namebot}
-┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛
-┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
-┆ Hᴀʟᴏ ${tagnya}
-┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
-┣╌ ⟪ *Yᴏᴜʀ Iɴғᴏ* ⟫
-┃▷ *Nᴀᴍᴇ* : ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-┃▷ *Sᴛᴀᴛᴜs* : ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-┃▷ *Pʀᴇᴍɪᴜᴍ* : ${usrs.premiumTime > 1 ? '✔ Ya': '✘ Tidak'}
-┃▷ *Rᴏʟᴇ* : ${usrs.role}
-┃▷ *Lɪᴍɪᴛ* : ${usrs.limit}
-┃▷ *Lᴇᴠᴇʟ* : ${usrs.limit}
-╰╴╴╴╳
-▎▍▌▋▊▍▋▍▌▌▌▋▍▎▎▍▍▎▎▎▎▍
-╭╴╴╼╳
-│◇ Aʟʟ Fɪᴛᴜʀ: ${totalf}
-╰╸╳`
+let con =  `●──────────────●
+ ㅤ     ㅤ List Menu
+ ●──────────────●
+╭───────────❒
+│ㅤнᴇʟʟo ${tagnya}
+├───────────
+│
+├─✦ʏouʀ ιɴғo✦
+│► Nama :  ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+│► Status :   ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+│► Premium :  ${usrs.premiumTime > 1 ? '✔ Ya': '✘ Tidak'}
+│► Role :  ${usrs.role}
+│► Limit :  ${usrs.limit}
+│► Level :  ${usrd.limit}
+╰──────❒
+ꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖ
+╭─────────❒
+│► All Fitur :  ${totalf}
+╰───❒`
 let hariRayaramadan = new Date('April 21, 2023 23:59:59') 
      let sekarangg = new Date().getTime() 
      let lebih = hariRayaramadan - sekarangg 
@@ -342,12 +343,11 @@ let hariRayaramadan = new Date('April 21, 2023 23:59:59')
      let jamm = Math.floor( lebih % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)) 
      let menitt = Math.floor( lebih % (1000 * 60 * 60) / (1000 * 60)) 
      let detikk = Math.floor( lebih % (1000 * 60) / 1000) 
-let tett = `▢ ▱▱▱ ▣► Dᴀᴛᴇ ◄▣ ▱▱▱ ▢ 
-▯▷ *Uᴘᴛɪᴍᴇ* : ${mpt}
-▯▷ *Tɪᴍᴇ* :  ${moment.tz('Asia/Jakarta').format('HH')} H${moment.tz('Asia/Jakarta').format('mm')} M${moment.tz('Asia/Jakarta').format('ss')} S
-▯▷ *Tᴀɴɢɢᴀʟ Isʟᴀᴍ* : ${dateIslamic}
-▢ ▱▱▱▱▱▱▱▱▱▱▱▱ ▢
-`
+let tett = `╭─────❒✦DATE✦❒─────╮
+│► uptime :  ${mpt}
+│► time :  ${moment.tz('Asia/Jakarta').format('HH')} H${moment.tz('Asia/Jakarta').format('mm')} M${moment.tz('Asia/Jakarta').format('ss')} S
+│► tanggal islam :  ${dateislamic}
+╰────────❒`
 let fot = `Nᴏᴛᴇ!! : Jɪᴋᴀ Aɴᴅᴀ Mᴇɴᴇᴍᴜᴋᴀɴ Bᴜɢ/Eʀʀᴏʀ 
 Bɪsᴀ Rᴇᴘᴏʀᴛ Dᴇɴɢᴀɴ Cᴀʀᴀ ▻ ketik #report 
 `
