@@ -346,7 +346,7 @@ let hariRayaramadan = new Date('April 21, 2023 23:59:59')
 let tett = `╭─────❒✦DATE✦❒─────╮
 │► uptime :  ${mpt}
 │► time :  ${moment.tz('Asia/Jakarta').format('HH')} H${moment.tz('Asia/Jakarta').format('mm')} M${moment.tz('Asia/Jakarta').format('ss')} S
-│► tanggal islam :  ${dateislamic}
+│► *Tᴀɴɢɢᴀʟ Isʟᴀᴍ* : ${dateIslamic}
 ╰────────❒
 `
 let fot = `Nᴏᴛᴇ!! : Jɪᴋᴀ Aɴᴅᴀ Mᴇɴᴇᴍᴜᴋᴀɴ Bᴜɢ/Eʀʀᴏʀ 
