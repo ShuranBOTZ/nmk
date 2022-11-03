@@ -66,14 +66,14 @@ let name = await conn.getName(who)
     sourceUrl: sgc
      }}
   })*/
- conn.send3ButtonImg(m.chat, result.data, `Effect *${effect}nya* Dah Jadi ${tag}`,`𒈞sнuʀᴀɴʙoтz𒈞 ${global.snh}`, 'Menu', '.menu', global.fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+ conn.send3ButtonImg(m.chat, result.data, `Effect *${effect}nya* ᴅoɴᴇ... ${tag}`,`𒈞sнuʀᴀɴʙoтz𒈞 ${global.snh}`, 'Menu', '.menu', global.fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: sgc,
     mediaType: 2, 
     description: sgc,
-    title: "Iɴɪ Dʜ Sɪᴀᴘ Cᴜʏ 〠",
+    title: "ᴅoɴᴇ... 〠",
     body: wm,
     thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: `https://wa.me/6281271010619?text=Hᴀɪ+Bɢ+Aʟᴅɪ`
+    sourceUrl: `https://wa.me/6281271010619?text=shuran`
      }}
   })
 }
